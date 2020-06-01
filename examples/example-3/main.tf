@@ -7,5 +7,5 @@ module "s3" {
   bucket_name = var.bucket_name
   region = var.region
   retention_days_infrequently_accessed = 40
-  retention_days_glacier = 60
+  retention_days_glacier = 70
 }
