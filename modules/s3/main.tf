@@ -36,5 +36,5 @@ resource "aws_s3_bucket" "s3_bucket" {
     }
   }
 
-  policy = fileexists(var.s3_bucket_policy_file_name) ?  templatefile(var.s3_bucket_policy_file_name, { bucket_name: "arn:aws:s3::${var.bucket_name}" } ) : "{}"
+  policy = fileexists(var.s3_bucket_policy_file_name) ?  templatefile(var.s3_bucket_policy_file_name, { bucket_name: "arn:aws:s3::${var.bucket_name}" } ) : ""
 }
