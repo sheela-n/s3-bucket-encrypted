@@ -1,0 +1,12 @@
+{
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"TestingOnly",
+      "Effect":"Allow",
+      "Principal": {"AWS": ["arn:aws:iam::111122223333:sheela","arn:aws:iam::444455556666:someone_else"]},
+      "Action":["s3:PutObject","s3:PutObjectAcl"],
+      "Resource":["arn:aws:s3:::${bucket_name}"]
+    }
+  ]
+}
