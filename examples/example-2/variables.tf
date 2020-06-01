@@ -1,5 +1,5 @@
 variable "bucket_name" {
-  default = "testing_sheela "
+  default = "testing"
 }
 
 variable "region" {
